@@ -1,0 +1,163 @@
+
+
+ * {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ffeed4;
+}
+
+a {
+    text-decoration: none;
+    /* color: #264653; */
+    color: inherit;
+}
+
+a:link {
+color: #000;
+}
+
+a:hover {
+color: #00AA86;
+}
+
+.sidebar {
+    display: block;
+    position: fixed;
+    right: 0;
+    height: auto;
+    width: 25%;
+    margin-right: 33px;
+    margin-top: 33px;
+    text-align: right;
+}
+.sidebar-item {
+    list-style-type: none;
+    margin-top: 5px;
+    font-size: 37px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+#logo {
+/* width: auto; */
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 40px;
+max-width: 300px;
+
+ }
+
+img {
+max-width: 50%;
+height: auto;
+margin-left: 33px;
+}
+
+.ci-image {
+  width: 50px;
+  float: right;
+  padding: 20px;
+}
+
+h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 28pt;
+    margin-left: 165px;
+    color: #00AA86;
+}
+
+p {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20pt;
+    margin-left: 165px;
+    margin-right: 550px;
+}
+.arrow {
+
+/* arrows on the side of the image */
+
+width: 75px;
+height: 75px;
+margin: 20px;
+margin-bottom: 200px;
+display: inline-block;
+position: relative;
+text-align: center;
+}
+
+.arrow::before {
+content: '';
+display: block;
+width: 24px;
+height: 24px;
+top: 50%;
+left: 50%;
+border-style: solid;
+border-color: #ffeed4;
+border-width: 2px 2px 0 0;
+position: absolute;
+transform-origin: 50% 50%;
+}
+
+.arrow.left::before { 
+transform: rotate(-135deg);
+margin: -15px 0 0 -10px;
+}
+.arrow.right::before { 
+transform: rotate(45deg); 
+margin: -15px 0 0 -20px;
+}
+
+.arrow::after {
+/* content: ''; */
+display: block;
+top: 50%;
+left: 50%;
+border-style: double;
+border-color: #000;
+position: absolute;
+/* transform-origin: 50% 50%; */
+}
+
+/* .arrow.left::after { 
+width: 40px;
+height: 0;
+border-width: 2px 0 0 0;
+transform: translate(-14px, -1px);
+}
+
+.arrow.right::after { 
+width: 40px;
+height: 0;
+border-width: 2px 0 0 0;
+transform: translate(-26px, -1px);
+} */
+
+.arrow.circle {
+background: #FF0006;
+border-radius: 50px;
+}
+
+.flex_container a {
+text-align: center;
+}
+
+.flex-container {
+    margin: 20px;
+    /* padding: 10px; */
+    display: flex;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+    margin-left: 165px;
+    gap: 15px;
+}
+
+Footer { 
+margin-top: 40px;
+}
